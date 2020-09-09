@@ -1,0 +1,40 @@
+<!-- index.html -->
+<html>
+  <head>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="addNewEmployee.css" />
+  </head>
+
+  <div class="header">
+    <div class="header-right">
+      <a class="active" href="/listBooks">List Books</a>
+      <a href="/listAuthors">List Authors</a>
+      <a href="/addNewBook.html">Add New Book</a>
+      <a href="/addNewAuthor.html">Add New Author</a>
+      <a href="/updateAuthorBook.html">Update Book Count</a>
+      <a href="/deleteBook.html">Delete Book</a>
+    </div>
+  </div>
+  <body>
+    <div class="login-box">
+      <h2>Update Author Book</h2>
+      <form method="post" action="/updateBook">
+        <div class="user-box">
+          <input type="text" name="id" required="" />
+          <label>Author ID</label>
+        </div>
+        <div class="user-box">
+          <input type="number" name="books" required="" />
+          <label>Number of Books written</label>
+        </div>
+        <a onclick="this.parentNode.submit();">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+    </div>
+  </body>
+</html>
